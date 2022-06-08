@@ -1,5 +1,28 @@
 # Getting Started with Create React App
 
+
+git config --global user.name "firstname lastname"
+git config --global user.email "example@gmail.com"
+git config --global user.password "secret"
+
+git remote add origin git@github.com:Baxosh/MMusic.git
+
+git init
+
+git config core.autocrlf true
+
+git status # statusni ko'rish
+
+1. git branch # branchlarni ko'rish
+2. git branch first # branch yasash
+3. git checkout first # yangi yasalgan branchga o'tish
+4. git add .
+5. git commit -m 'first commit'
+6. git push origin first
+7. githubga o'tib pull request ochish.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,4 +91,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# MDelivery
+# MMusic
