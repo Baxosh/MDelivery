@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_of_products",
+  "info": {
+    "singularName": "type-of-product",
+    "pluralName": "type-of-products",
+    "displayName": "Type-of-product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "type_of_product"
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}
