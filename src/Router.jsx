@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import Registration from './pages/Registration'
 
 
 export default function Router() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} exact />
+				<Route path="/" element={<Registration />} exact />
 			</Routes>
 		</BrowserRouter>
 	)

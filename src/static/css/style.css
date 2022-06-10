@@ -1,8 +1,38 @@
-input[type='radio'] {
-	display: none;
+.form {
+	width: 400px;
 }
 
-.star {
-	cursor: pointer;
-	transition: color 200ms;
+.container {
+	width: 400px !important;
+	height: 500px !important;
+}
+
+.demo {
+	color: blue;
+}
+.demo:hover {
+	text-decoration: underline;
+	transition: text-decoration 10s;
+}
+
+.firstInput {
+	border: 1px solid grey;
+	width: 100%;
+	height: 40px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+}
+
+.firstInput::placeholder {
+	font-size: 17px;
+}
+
+.allInputes {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
 }
