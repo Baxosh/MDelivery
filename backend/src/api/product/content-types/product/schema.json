@@ -32,12 +32,6 @@
     "Price": {
       "type": "integer"
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "products"
-    },
     "restaurant": {
       "type": "relation",
       "relation": "manyToOne",
@@ -48,6 +42,12 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::type-of-product.type-of-product",
+      "inversedBy": "products"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
       "inversedBy": "products"
     }
   }

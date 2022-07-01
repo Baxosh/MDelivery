@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_uis",
+  "info": {
+    "singularName": "user-ui",
+    "pluralName": "user-uis",
+    "displayName": "User-UI",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "biginteger"
+    }
+  }
+}

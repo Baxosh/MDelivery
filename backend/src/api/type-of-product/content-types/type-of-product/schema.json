@@ -12,14 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "restaurants": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::restaurant.restaurant",
+      "mappedBy": "type_of_products"
+    },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "type_of_product"
-    },
-    "title": {
-      "type": "text"
     }
   }
 }

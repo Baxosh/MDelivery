@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Image": {
+    "image": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -31,6 +31,23 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "restaurant"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "type_of_products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type-of-product.type-of-product",
+      "inversedBy": "restaurants"
     }
   }
 }

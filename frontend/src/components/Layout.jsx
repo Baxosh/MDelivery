@@ -1,16 +1,12 @@
-import React from 'react';
-import Home from '../pages/Home';
+import React from 'react'
+import Navbar from '../components/Navbar'
 
+export default function Layout({ children }) {
+	return (
+		<div>
+			<Navbar />
 
-export default function Layout({children}) {
-  return (
-      <div className="columns">
-           <div className="column is-2 has-background-info-light">
-               <Home />
-           </div>
-           <div className="column">
-               {children}
-           </div>
-       </div>
-  );
+			<div className="m-auto">{children}</div>
+		</div>
+	)
 }
